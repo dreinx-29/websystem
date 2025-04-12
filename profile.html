@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #128876, #b9c6dd);
+
+        }
+
+        h2{
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        a :hover{
+            text-decoration: underline;
+            color: blue;
+
+        }
+        .back-button {   
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #308cb3;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+            color: #3e96b4;
+        }
+        fieldset {
+            position: relative;
+            top: 35px;
+            border: 2px solid #007bff;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #cce2f7;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 18px;
+            color: #007bff;
+            padding: 5px 10px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: white;
+        }
+        h1{
+            position: relative;
+            top: 50px;
+        }
+        .settings-icon {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .profile {
+            display: flex;
+            padding: 20px;
+        }
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 3px solid #007bff;
+        }
+        .user-info p {
+            margin: 5px 0;
+        }
+        .follow-container {
+            display: flex;
+            gap: 10px;
+        }
+        .orders {
+            text-align: center;
+        }
+        .icons {
+            position: relative;
+            top: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+            margin: 20px 0;
+        }
+        .icons a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        .icons i {
+            font-size: 35px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .log-out-button, .switch-account {
+            position: relative;
+            top: 70px;
+            display: block;
+            width: 200px;
+            background: #1f56b0;
+            color: white;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+        }
+        .log-out-button:hover, .switch-account:hover {
+            background: #0077b6;
+        }
+        .extra-section {
+            position: relative;
+            top: 70px;
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="HOME.html" class="back-button">X</a>
+    <fieldset>
+        <a href="#" class="settings-icon"><i class="fa-solid fa-cog"></i></a>
+        <legend>USERS INFO</legend>
+        <div class="profile">
+            <img src="usersamplepic.jpg">  
+            <div class="user-info">
+                <h2>Username2365489</h2>
+                <p>+638978888888</p>
+                <div class="follow-container">
+                    <p>Following</p>
+                    <p>Follower</p>
+                </div>
+                <p>user.n@gmail.com</p>
+            </div>
+        </div>
+    </fieldset>
+    
+    <div class="orders">
+        <h1>ORDERS</h1>
+        <div class="icons">
+            <a href="#"><i class="fa-solid fa-truck"></i> TO SHIP</a>
+            <a href="#"><i class="fa-solid fa-box"></i> TO RECEIVE</a>
+            <a href="#"><i class="fa-solid fa-check"></i> COMPLETED</a>
+        </div>
+    </div>
+
+    <div class="extra-section"> 
+        <a href="#">
+        <h2>Order History</h2>
+        </a>
+        <p>View your past orders and track ongoing shipments.</p>
+        <a href="#">
+        <h2>Wishlist</h2>
+        </a>
+        <p>Save items for later purchases and keep track of your favorite products.</p>
+        <a href="#">
+        <h2>Support</h2>
+        </a>
+        <p>Need help? Visit our FAQ section or contact customer support.</p>
+    </div>
+    
+    <div class="buttons">
+        <a href="#" class="log-out-button">LOG OUT</a>
+        <a href="#" class="switch-account">SWITCH ACCOUNT</a>
+    </div>
+</body>
+</html>

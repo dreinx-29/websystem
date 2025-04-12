@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Received</title>
+    <style>
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #128876, #b9c6dd);
+            margin: 0;
+        }
+
+        .order-container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 420px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .order-icon {
+            font-size: 60px;
+            color: #0ea5e9;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+
+        .order-message {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .status-text {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #0ea5e9;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            
+        }
+
+        .back-button:hover {
+            background: #0369a1;
+            transform: scale(1.05);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="order-container">
+        <div class="order-icon">✅</div>
+        <h2>Order Received!</h2>
+        <p class="order-message">Your order has been received and is now waiting to be processed.</p>
+        <p class="status-text">You will be notified once your order is being prepared for shipment.</p>
+        <a href="product.html" class="back-button">Continue Shopping</a>
+    </div>
+</body>
+</html>

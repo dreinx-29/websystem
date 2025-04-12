@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Purchases</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #128876, #b9c6dd);
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #a8e4ef;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        fieldset {
+            border: 2px solid #1d1c1c;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+
+        img {
+            width: 250px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            font-size: 30px;
+            color: gray;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+        color: gold;
+        }
+
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid;
+            border-color: b;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        .buttons {
+            margin-top: 15px;
+        }
+
+        .button1 {
+            background: blue;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 16px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .button1 a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .button1:hover {
+            background: darkblue;
+        }
+
+        .back-button {   
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #308cb3;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+            color: #3e96b4;
+        }
+
+    </style>
+</head>
+<body>
+    
+<div>
+    
+</div>
+    <a href="HOME.html" class="back-button">X</a>
+
+    <h2>Recent Purchases</h2>
+
+    <fieldset>
+        <img src="product_placeholder.jpg" alt="Product Image">
+
+        <p>Rate this product:</p>
+        <form>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">★</label>
+
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+            </div>
+
+            <textarea id="message" name="message" placeholder="Write your review here:"></textarea>
+        </form>
+
+        <div class="buttons">
+            <div class="button1">
+                <a href="Buynow.html">BUY AGAIN</a>
+            </div>
+        </div>
+    </fieldset>
+
+</body>
+</html>

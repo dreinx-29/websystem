@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Center</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(to right, #128876, #b9c6dd);
+      color: black;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: black;
+      text-align: center;
+    }
+
+    nav .buttons {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      font-size: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    nav i {
+      margin-right: 5px;
+    }
+
+    h2 {
+      text-align: left;
+      padding: 10px 0 0 0;
+    }
+
+    .message {
+      background-color: rgb(246, 236, 236);
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    .message p {
+      text-align: center;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .profile-header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .profile-header h3 {
+      margin: 0;
+    }
+
+    .chat {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    .link {
+      text-decoration: none;
+      color: black;
+    }
+
+    .link a {
+      text-decoration: none;
+      color: black;
+      display: block;
+    }
+
+    .link a h3 {
+      text-decoration: none;
+      color: black;
+      pointer-events: none;
+    }
+
+    .people a {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: transparent;
+    }
+
+    .people img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    legend {
+      font-weight: bold;
+      font-size: 18px;
+      color: #007bff;
+      padding: 5px 10px;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Message Center</h1>
+
+  <nav>
+    <div class="buttons">
+      <div class="home">
+        <a href="HOME.html">
+          <i class="fa fa-home"></i>
+        </a>
+      </div>
+      <div class="cart">
+        <a href="cart.html">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <div class="profile">
+        <a href="profile.html">
+          <i class="fa fa-user"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <fieldset>
+    <legend>Profiles</legend>
+    <div class="chat">
+      <div class="people">
+        <a href="people.html">
+          <img src="usersamplepic.jpg" alt="User image">
+          <div>user..</div>
+        </a>
+      </div>
+      <div class="people">
+        <a href="people.html">
+          <img src="grocery Bg.jpg" alt="Placeholder">
+          <div>user1233</div>
+        </a>
+      </div>
+      <div class="people">
+        <a href="people.html">
+          <img src="logo-removebg-preview.png" alt="Placeholder">
+          <div>user3689</div>
+        </a>
+      </div>
+    </div>
+  </fieldset>
+
+  <br>
+
+  <fieldset>
+    <legend>Inbox</legend>
+
+    <div class="link">
+      <a href="people.html" id="links">
+        <div class="message">
+          <div class="profile-header">
+            <img src="usersamplepic.jpg" alt="User image">
+            <h3>user25612222</h3>
+          </div>
+          <p>Click to view/send message.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="link">
+      <a href="people.html" id="links">
+        <div class="message">
+          <div class="profile-header">
+            <img src="usersamplepic.jpg" alt="User image">
+            <h3>user25612222</h3>
+          </div>
+          <p>Click to view/send message.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="link">
+      <a href="people.html" id="links">
+        <div class="message">
+          <div class="profile-header">
+            <img src="usersamplepic.jpg" alt="User image">
+            <h3>user25612222</h3>
+          </div>
+          <p>Click to view/send message.</p>
+        </div>
+      </a>
+    </div>
+    
+  </fieldset>
+</body>
+
+</html>
